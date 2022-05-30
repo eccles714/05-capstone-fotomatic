@@ -341,7 +341,7 @@ header .mobile {
   max-width: 100%;
   display: flex;
   padding: 0 1%;
-
+  justify-content: center;
 }
 
 
