@@ -1,5 +1,10 @@
 /* Universal Styles */
 
+@font-face {
+  font-family: "Palatino";
+  src: url(resources/Palatino-Font.ttf);
+}
+
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -27,6 +32,7 @@ html {
 
 .image-container img {
   display: block;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -257,7 +263,6 @@ header .mobile {
   margin: 0 auto;
   background-size: cover;
   background-position: center;
-
 }
 
 .feature #feature1{
@@ -268,6 +273,7 @@ header .mobile {
   background-image: url(resources/feature-2.png);
 }
 .feature h2 {
+  padding-top:40px;
   padding-bottom: .5rem;
   font-size: 2.25rem;
   font-weight: bold;
@@ -333,8 +339,11 @@ header .mobile {
 
 #filters-section .images-container {
   max-width: 100%;
+  display: flex;
   padding: 0 1%;
+
 }
+
 
 @media only screen and (max-width: 760px) {
   #filters-section {
@@ -369,23 +378,27 @@ header .mobile {
 /* Quotes Section */
 
 #quotes-section {
+  position: relative;
   background-color: #f3f3f3;
+  padding: 80px;
 }
 
 #quotes-section content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
-  font-size: 1.875rem;
+  font-style: italic;
+  font-size: 30px;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
 }
 
 #quotes-section quote-citation {
+  display: inline;
   height: 1.875rem;
 }
 
@@ -409,18 +422,23 @@ header .mobile {
 /* Footer */
 
 footer {
+  position: relative;
   background-color: #9b9b9b;
-  padding: 1.5rem 2rem;
+  height:62px;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 footer .content {
   color: white;
-  display: flex;
   font-size: .75rem;
+  justify-content: space-between;
 }
 
 footer .copyright {
   flex-grow: 1;
+  margin-left: 30px;
 }
 
 @media only screen and (min-width: 760px) {
