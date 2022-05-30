@@ -127,7 +127,7 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
-  background-image: url(/resources/banner-landingpage.jpg);
+  background-image: url(resources/banner-landingpage.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -261,11 +261,11 @@ header .mobile {
 }
 
 .feature #feature1{
-  background-image: url(/resources/feature-1.png);
+  background-image: url(resources/feature-1.png);
 }
 
 .feature #feature2{
-  background-image: url(/resources/feature-2.png);
+  background-image: url(resources/feature-2.png);
 }
 .feature h2 {
   padding-bottom: .5rem;
