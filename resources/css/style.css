@@ -8,6 +8,7 @@ html {
 .main-content {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
+  width: 100%;
 }
 
 .center {
@@ -41,6 +42,7 @@ header {
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  z-index: 2;
 }
 
 header .content {
@@ -51,11 +53,18 @@ header .content {
 
 header .logo {
   flex: 1;
+  font-size: 1.5rem;
+  font-family: "Roboto Mono", monospace;
+  margin-left: 30px;
 }
 
 header nav ul {
   display: flex;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-right: 30px;
 }
+
 
 nav li {
   padding-left: 3.5rem;
@@ -114,12 +123,19 @@ header .mobile {
 
 #sign-up-section {
   display: flex;
+  width: 100%;
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image: url(/resources/images/banner-landingpage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #sign-up-cta {
+  margin-top: 10.625rem;
+  margin-left: 6.25rem;
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
@@ -159,6 +175,13 @@ header .mobile {
 #sign-up-cta .button {
   margin-top: 1.625rem;
   padding: 1.25rem 7.25rem;
+}
+
+#sign-up-cta .email {
+  font-family: "Roboto";
+  font-weight: 300;
+  line-height: 1.4;
+  font-size: 1.25rem;
 }
 
 @media only screen and (max-width: 760px) {
@@ -210,10 +233,11 @@ header .mobile {
 /* Features Section */
 
 #features-section {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
   padding: 4rem 5%;
   background-color: #f3f3f3;
+  display: flex;
+  justify-content:center;
 }
 
 .feature {
@@ -223,12 +247,26 @@ header .mobile {
   background-color: white;
 }
 
+.feature .center {
+  height: 635px;
+}
+
 .feature .image-container {
   width: 90%;
   height: 65%;
   margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+
 }
 
+.feature #feature1{
+  background-image: url(/resources/images/feature-1.png);
+}
+
+.feature #feature2{
+  background-image: url(/resources/images/feature-2.png);
+}
 .feature h2 {
   padding-bottom: .5rem;
   font-size: 2.25rem;
